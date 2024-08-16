@@ -1,6 +1,6 @@
 import aiohttp
 
-from app.music.genres import res_dict
+from music.genres import res_dict
 from pytils import numeral
 
 
