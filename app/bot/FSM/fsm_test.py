@@ -55,9 +55,9 @@ async def send_login(message: types.Message, state: FSMContext):
         await state.clear()
     else:
         await message.answer(_('INVALID_LOGIN_MESSAGE')())
-    # await create_or_update_user(user_id=user_id, status=status, username=username, referer_login=referer_login,
-    #                             language_code=language_code, registration_date=registration_date,
-    #                             last_active=last_active)
+    await create_or_update_user(user_id=user_id, status=status, username=username, referer_login=referer_login,
+                                language_code=language_code, registration_date=registration_date,
+                                last_active=last_active)
 
 
 async def deep_link(user_login):
