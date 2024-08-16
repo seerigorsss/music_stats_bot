@@ -1,0 +1,40 @@
+# Translations template for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-08-14 18:58+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: app/bot/FSM/fsm_test.py:209 app/bot/handlers/common.py:115
+#: app/bot/utils/create_menu.py:11
+msgid "START_MESSAGE"
+msgstr ""
+
+#: app/bot/FSM/switch_to_fsm.py:29
+msgid "BAD_LINK_MESSAGE"
+msgstr ""
+
+msgid "SENDING_LOGIN_MESSAGE"
+msgstr "
+
+msgid "INVALID_LOGIN_MESSAGE"
+msgstr ""
+
+msgid "SHARE_RESULT_MESSAGE"
+msgstr "
+
+msgid "START_FROM_FRIEND_MESSAGE"
+msgstr ""
+
