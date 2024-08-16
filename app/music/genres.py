@@ -1,6 +1,6 @@
 import json
 
-with open('genres.json', encoding='utf-8') as file:
+with open('app/music/genres.json', encoding='utf-8') as file:
     data = file.read()
 
 res = json.loads(data)['result']
