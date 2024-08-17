@@ -6,6 +6,8 @@ services:
       - ./env
     volumes:
       - pgdata:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: "zetL3uhzo4"
     restart: on-failure
     ports:
       - "5432:5432"
