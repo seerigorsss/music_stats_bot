@@ -35,15 +35,15 @@ async def cmd_start(message: types.Message, state: FSMContext, command: filters.
             await state.update_data(user_login=user_login)
             await message.answer(_('START_FROM_FRIEND_MESSAGE')(user_login=user_login))
 
-            # await create_or_update_user(user_id=user_id, status=status, username=username, referer_login=referer_login,
-            #                   language_code=language_code, registration_date=registration_date,
-            #                   last_active=last_active)
+            await create_or_update_user(user_id=user_id, status=status, username=username, referer_login=referer_login,
+                              language_code=language_code, registration_date=registration_date,
+                              last_active=last_active)
         except:
             logger.error(f'Error in start link: {args}')
             await message.answer(_('BAD_LINK_MESSAGE')())
             await state.clear()
     else:
         await message.answer(_('START_MESSAGE')())
-        # await create_or_update_user(user_id=user_id, status=status, username=username, referer_login=referer_login,
-        #                   language_code=language_code, registration_date=registration_date,
-        #                   last_active=last_active)
+        await create_or_update_user(user_id=user_id, status=status, username=username, referer_login=referer_login,
+                          language_code=language_code, registration_date=registration_date,
+                          last_active=last_active)

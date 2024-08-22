@@ -22,10 +22,10 @@ bot = Bot(token=env_parameters.TELEGRAM_BOT_TOKEN, parse_mode="HTML")
 
 async def main():
     # Database initialization
-    # try:
-    #     await init()
-    # except Exception as error:
-    #     logger.error('Error in initialization DB', exc_info=error)
+    try:
+        await init()
+    except Exception as error:
+        logger.error('Error in initialization DB', exc_info=error)
 
     # Settings for correct work of a dispatcher
     dp = Dispatcher(storage=MemoryStorage())
